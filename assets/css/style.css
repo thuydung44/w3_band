@@ -1,0 +1,68 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+1. vi tri
+2. kich thuoc ( rong cao)
+3. mau sac
+4. kieu dang
+*/
+
+#main {
+
+}
+#header {
+    height: 46px;
+    background-color: #000;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+
+}
+#nav > li > a {
+    color: #fff;
+}
+#nav li a {
+    text-decoration: none;
+    padding: 0px 24px;
+    line-height: 46px;
+    display: inline-block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav {
+    /* display: none; */
+    position: absolute;
+    background-color: #fff;
+}
+#nav .subnav a {
+    color: #000;
+    display: block;
+}
+
+#slider {
+    min-height: 500px;
+    background-color: #333;
+
+}
+#content{
+
+}
+#contact{
+
+}
+#footer{
+
+}
