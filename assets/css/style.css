@@ -5,7 +5,8 @@
 }
 .clear {
     clear: both;
-}
+} 
+
 .text-white {
     color: #fff !important;
 }
@@ -212,8 +213,6 @@ html {
 } 
 .place-list{
     margin: 32px -8px 0;
-    
-    
 
 
 }
@@ -257,17 +256,21 @@ html {
     text-decoration: none;
     padding: 10px 16px;
     display: inline-block;
-
+    cursor: pointer;
+    border: none;
+}
+.place-buy-btn:hover {
+    background-color: #757575;
 
 }
 
 #contact{
 
 }
-#footer{
+#footer {
 
 }
-
+                                 
 .modal {
     position: fixed;
     top: 0;
@@ -275,15 +278,20 @@ html {
     right: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.4);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
+.modal.open {
+    display: flex;
+} 
 .modal-container {
     background: #fff;
     width: 900px;
-    min-height: 200px;
+    max-width: calc(100% - 32%);
+    min-height: 100px;
     position: relative;
+    animation: modalFadeIn ease .5s;
 }
 .modal-header {
     padding: 32px 16px;
@@ -335,6 +343,7 @@ html {
     font-size: 15px;
     margin-bottom: 16px;
     cursor: pointer;
+    
 }
 .modal-pay:hover {
     opacity: 0.9;
@@ -346,6 +355,18 @@ html {
 
 .modal-help a {
     color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
 }
 
 
