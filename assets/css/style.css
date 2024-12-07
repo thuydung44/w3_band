@@ -81,6 +81,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
+    /* overflow: hidden */
 
 }
 #nav {
@@ -92,15 +93,30 @@ html {
 #nav .nav-arrow-down {
     font-size: 14px;
 }
+#header .mobile-menu-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
-    cursor: pointer;
 }
+
 #header .search-btn:hover {
     cursor: pointer;
     background-color: #f44336;
 }
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+
+}#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+
+}
+#header .menu-icon, 
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -113,6 +129,7 @@ html {
 }
 #nav li {
     position: relative;
+    
 
 }
 #nav > li > a {
@@ -133,7 +150,7 @@ html {
     color: #000;
     background-color: #ccc;
 }
-#nav .subnav {
+#nav .subnav { 
     display: none;
     position: absolute;
     top: 100%;
@@ -177,6 +194,7 @@ html {
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000 
 
 
 
@@ -186,9 +204,12 @@ html {
 }
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
     
 }
 #content .section-heading {
@@ -261,7 +282,7 @@ html {
 } 
 .place-list{
     
-    margin-top: 32px;
+    margin-top: 16px;
 
 
 }
